@@ -13,10 +13,22 @@ public class SleepyHead {
         
         /*
          * Ask the user for these values using
-         * JOptionPane.showConfirmDialog(null, "is it a weekday?", "",
-         * JOptionPane.YES_NO_OPTION);
+         JOptionPane.showConfirmDialog(null, "is it a weekday?", "",
+         JOptionPane.YES_NO_OPTION);
          */
-    
+        int a = JOptionPane.showConfirmDialog(null, "is it a weekday?", "",
+        JOptionPane.YES_NO_OPTION);
+        int x = JOptionPane.showConfirmDialog(null, "is it a vacation?", "",
+                JOptionPane.YES_NO_OPTION);
+        if(a==0 || x==0) {
+        	System.out.println("sleep in");
+        }
+      if (a==0) {
+    	  System.out.println("get up lazybones!");
+      }
+      if (a==0 && x==0) {
+      	System.out.println("Sleep in");
+      }
 
 
         /*
